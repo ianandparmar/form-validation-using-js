@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="mainContainer">
+        <h1>Form Validation</h1>
+        <div class="formContainer">
+            <form action="login.html" onsubmit="return Submit()">
+                <label for="name" class="label">User Name</label><br>
+                <input type="text" class="inputField" id="name" placeholder="Enter your name" required><br>
+                <span class="error" id="nameError"></span><br>
+
+                <label for="email" class="label">Email</label><br>
+                <input type="email" class="inputField" id="email" placeholder="Enter your email" required><br>
+                <span class="error" id="emailError"></span><br>
+
+                <label for="password" class="label">Password</label><br> 
+                <input type="password" class="inputField" id="password" placeholder="Enter password" required><br>
+                <span class="error" id="passwordError"></span><br>
+
+                <label for="confirmPassword" class="label">Confirm Password</label><br>
+                <input type="password" class="inputField" id="confirmPassword" placeholder="Confirm password" required><br>
+                <span class="error" id="confirmPasswordError"></span><br>
+
+                <label for="contactNumber" class="label">Contact Number</label><br>
+                <input type="number" class="inputField" id="contactNumber" placeholder="Enter your contact no" required><br>
+                <span class="error" id="contactNumberError"></span><br>
+
+                <button type="submit" class="submitBtn">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
